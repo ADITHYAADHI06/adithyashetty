@@ -303,10 +303,18 @@ section {
 /* ===============
         bio section
 ======================== */
+
+.section-bioData .container {
+  max-width: 120rem;
+  /* margin: 0 auto; */
+  margin: 0 4rem 0 11rem;
+}
+
 .bio-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 0px;
 }
 
 .Bio-logo {
@@ -319,7 +327,7 @@ section {
   display:flex ;
   padding: 2rem 0 5rem 0;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
 
 }
 .bio-progress-bar{
