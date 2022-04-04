@@ -203,6 +203,12 @@ section {
 .gird-two-column {
   grid-template-columns: repeat(2, 1fr);
 }
+.gird-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gird-four-column {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .btn {
   display: inline-block;
@@ -227,14 +233,14 @@ section {
   box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
 }
 
-.comman-heading {
+.common-heading {
   font-size: 4.8rem;
   margin-bottom: 6rem;
   position: relative;
   font-weight: 600;
   text-transform: capitalize;
 }
-.comman-heading::before {
+.common-heading::before {
   content: "";
   position: absolute;
   top: 105%;
@@ -244,7 +250,7 @@ section {
   background-color: var(--helper);
   border-radius: 50%;
 }
-.comman-heading::after {
+.common-heading::after {
   content: "";
   position: absolute;
   top: 114%;
@@ -298,6 +304,9 @@ section {
   margin-top: 1.3rem;
   margin-bottom: 2rem;
   max-width: 60rem; 
+}
+.hireme-btn:hover{
+  transform: translateY(-0.7rem);
 }
 
 /* ===============
@@ -379,20 +388,23 @@ box-shadow: var(--shadow);
     outline: 0;
     border: 0;
   }
+
   .bio-progress-2 span{
-left: 66.3%;
-}
-.bio-progress-3 span{
-  left: 66.3%;
-  }
+   left: 66.3%;
+   }
+
+  .bio-progress-3 span{
+    left: 66.3%;
+   }
+
   .bio-progress-4 span{
     left: 61.3%;
     }
-    .bio-progress-5 span{
-      left: 30%;
-    width:5rem;
 
-      }
+  .bio-progress-5 span{
+     left: 30%;
+     width:5rem;
+    }
 
       .btn-data-cv{
         display: inline-block;
@@ -407,8 +419,7 @@ left: 66.3%;
         cursor: pointer;
         border-radius: 20px;
         color: #e4e4e4;
-        transition: all 0.3s ease;
-
+        transition: all 0.5s ease;
       }
       .btn-data-cv a {
         color: #e4e4e4;
@@ -416,9 +427,9 @@ left: 66.3%;
       .btn-data-cv:hover,
       .btn-data-cv:active {
         box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
+        /* transform: translateY(-0.2rem); */
       }
     
-
       /*========================================
       == to create caret 
       ==========================================*/
@@ -432,5 +443,85 @@ left: 66.3%;
            border-color: transparent ;
            border-bottom-color:var(--helper) ;
            top: -1.6rem;
-
       }
+
+   /*===============================
+      portfoilo Section 
+ =================================*/
+
+
+ .section-portfolio{
+   background-color: var(--bg);
+   transition: all 0.7s linear;
+ }
+
+ .section-portfolio p{
+    max-width: 60rem;
+ }
+ .p-btns{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   margin: 5.4rem;
+   gap: 3.2rem;
+ }
+ 
+ .portfolio-images{
+  gap: 3.2rem;
+ }
+ .portfolio-images img{
+   width: 100%;
+   overflow: hidden;
+   border-radius: 7px;
+   position: relative;
+ }
+ .img-overlay{
+   position: relative;
+   overflow: hidden;
+ }
+ .img-overlay .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+  background: var(--gradientSupport);
+  opacity: 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transform: translateY(100%);
+  transition: all 0.4s linear;
+  border-radius: 7px;  
+}
+.img-overlay:hover > .overlay{
+  transform: translateY(0);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.img-overlay .common-heading{
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+.img-overlay .common-heading::before{
+  width: 0;
+  height: 0;
+}
+.img-overlay .common-heading::after{
+  width: 0;
+  height: 0;
+}
+/* .p-btn:hover{
+  transform: translateY(-1rem);
+} */
+.p-btn-active{
+  transform: translateY(-1rem);
+}
+.p-img-not-active{
+  display: none;
+}
+ 
+
+
