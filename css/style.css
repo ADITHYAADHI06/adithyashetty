@@ -446,7 +446,7 @@ box-shadow: var(--shadow);
       }
 
    /*===============================
-      portfoilo Section 
+      Portfoilo Section 
  =================================*/
 
 
@@ -524,4 +524,22 @@ box-shadow: var(--shadow);
 }
  
 
+  /*===============================
+      Work Data Section 
+ =================================*/
 
+ .section-work-data{
+   background: var(--gradientSupport);
+   text-align: center;
+   transition: all .7s linear;
+   color: var(--white);
+
+ }
+ .counter-numbers{
+   font-size:4rem;
+ }
+
+ .section-work-data p{
+   color: var(--white);
+   text-transform: capitalize;
+ }
