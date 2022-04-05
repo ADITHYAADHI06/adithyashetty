@@ -35,3 +35,17 @@ p_btns.addEventListener("click", (e) => {
     curElem.classList.remove("p-img-not-active");
   });
 });
+
+// Swiper JS code
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  autoplay: {
+    Delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
