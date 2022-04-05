@@ -17,6 +17,7 @@
   --helper: #8490ff;
   --helper-tint: #f3f4ff;
   --bg: rgb(249, 249, 255);
+  --overlay:#3e64ff; 
   --icons-bg: rgba(144, 172, 209, 0.2);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
   --gradientSupport: -webkit-linear-gradient(
@@ -556,12 +557,10 @@ box-shadow: var(--shadow);
       }
 
     .section-services .gird{
-       margin-top: 10rem;
+       margin-top: 6.5rem;
        gap: 6rem;
        row-gap: 8rem;
      }
-
-  
      .service-box{
        box-shadow: var(--shadow);
        text-align: center;
@@ -596,7 +595,6 @@ box-shadow: var(--shadow);
       animation:  water-wave 3s linear infinite;
       
      }
-
 
      @keyframes water-wave {
         0%{
@@ -703,4 +701,51 @@ box-shadow: var(--shadow);
     height: 10rem;
     border-radius: 50%;
     border: .5rem solid var(--helper-tint);
+  }
+
+  .section-testimonials{
+  padding-top: 4rem;
+  }
+
+
+ /*===============================
+      our freelancing Section 
+   =================================*/
+
+
+   .section-freelancing{
+     background-image: url("../images/folio/3.jpg");
+     background-repeat: no-repeat;
+     background-size: 100%;
+   /* parrelex effect */
+         background-attachment: fixed;
+    /* parrelex effect */
+    position: relative;
+    transition: all 0.7s linear;
+    text-align: center;
+    z-index: 1;
+    }
+
+    .section-freelancing .overlay{
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background-color: var(--helper); */
+      background-color: var(--overlay);
+      opacity: 0.7;
+      z-index: -999;
+    }
+    .section-freelancing h2{
+      font-size: 4rem;
+    }
+
+  .section-freelancing span{
+    color: #a0f669;
+  }
+  .section-freelancing p,
+  .section-freelancing h2{
+    color:var(--white);
+    margin-bottom: 2rem ;
   }
