@@ -749,3 +749,38 @@ box-shadow: var(--shadow);
     color:var(--white);
     margin-bottom: 2rem ;
   }
+
+
+
+   /*===============================
+      our contact US Section 
+   ================================*/
+
+   .section-contact-main{
+     max-width: 70rem;
+     margin: 0 auto;
+     margin-top: 7rem;
+     transition: all 0.3s linear;
+   }
+   .section-contact-main form{
+     display: flex;
+     flex-direction: column;
+     gap: 2.5rem;
+   }
+   .section-contact-main input, .section-contact-main textarea{
+     padding: 1.3rem 1.8rem;
+     border: 0.1rem solid #c9c9c9;
+     border-radius: 5px;
+     font-size: 1.6rem;
+     font-family: "work sans";
+     width: 100%;
+   }
+   .section-contact-main input[type="submit"]
+   {
+     width: 30%;
+     border: none;
+   }
+   .section-contact-main .gird{
+     gap: 3rem;
+   }
+  
