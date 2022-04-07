@@ -784,3 +784,84 @@ box-shadow: var(--shadow);
      gap: 3rem;
    }
   
+
+   .section-footer{
+     background: var(--heading);
+    padding-bottom: 3rem;
+     transition: all 0.7s linear;
+   }
+   .section-footer .container{
+      /* margin: 0 4rem 0 10rem; */
+      padding-top: 4rem;
+   }
+   /* .section-footer .gird{
+     gap: 4rem;
+   } */
+   .section-footer h3{
+     color: var(--white);
+     margin-bottom: 3rem;
+   }
+
+   .f-about p{
+     color: #adadad;
+   }
+   .f-links ul, .f-services ul, .f-address address{
+      display:flex;
+      justify-content:center;
+      gap: 1.8rem;
+      flex-direction: column;     
+   }
+
+   .f-links li, .f-services li,.f-links a, .f-services a{
+     text-transform: capitalize;
+     font-size: 1.8rem;
+     color: #adadad;
+   }
+   .f-links span, .f-services span, .f-address span{
+      margin-right: 0.8rem;
+   }
+   .f-address p, .f-address p a{
+     font-style: normal;
+      color: #adadad;
+      cursor: pointer;
+    }
+    .f-social-icons{
+      margin: 3.5rem 0 2.5rem 0;
+      text-align: center;
+      color: #adadad;
+
+    }
+    .f-social-icons .icons{
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--icons-bg);
+      display: inline-block;
+      padding: 1.2rem 1.6rem;
+      position: relative;
+      color: var(--white);
+     transition: all 0.3s linear;
+      animation:  water-wave 3s linear infinite;
+
+    } 
+
+    .f-credits p{
+      text-align: center;
+      color: #adadad; 
+    }
+    .footer a:hover, .footer a:active{
+      color: var(--white);
+    }
+
+    .insta:hover,.insta:active{
+      color: red;
+      text-shadow: 0 0 15px rgb(197, 34, 34);
+    }
+    .linkedin:hover,.linkedin:active{
+      color: #189ddb;
+      text-shadow: 0 0 15px #2091c5;
+
+    }
+    .whatsapp:hover,.whatsapp:active{
+      color: #4dc247;
+      text-shadow: 0 0 15px #4dc247;
+    }
