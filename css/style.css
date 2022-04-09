@@ -316,6 +316,7 @@ section {
 .section-bioData .container {
   max-width: 120rem;
   /* margin: 0 auto; */
+  padding-top: 0rem;
   margin: 0 4rem 0 11rem;
 }
 
@@ -864,4 +865,28 @@ box-shadow: var(--shadow);
     .whatsapp:hover,.whatsapp:active{
       color: #4dc247;
       text-shadow: 0 0 15px #4dc247;
+    }
+
+
+
+    /*  Scroll Buton  */
+    .scrollTop-style{
+      position: fixed;
+      right: 1.6%;
+      bottom: 5%;
+      z-index: 999999;
+
+    }
+
+    .scroll-up{
+      background-color: var(--helper);
+      /* background-color: #1e5760; */
+      color: var(--heading);
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inline-block;
+      padding: 1rem 1.4rem;
+      position: relative;
+      transition: all 0.3s linear;
+      animation:  water-wave 3s linear infinite;
     }

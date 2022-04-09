@@ -49,3 +49,21 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// Scroll to TOP Button
+const footerElem = document.querySelector(".section-footer");
+
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+
+scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-up"></ion-icon>`;
+
+footerElem.after(scrollElement);
+
+const sectionBio = document.querySelector(".section-bioData");
+
+const ScrollToTop = () => {
+  sectionBio.scrollIntoView({ behavior: "smooth" });
+};
+
+scrollElement.addEventListener("click", ScrollToTop);
