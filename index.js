@@ -72,8 +72,6 @@ scrollElement.addEventListener("click", ScrollToTop);
 
 const portfolio = document.querySelector(".portfolio");
 const contact = document.querySelector(".contact");
-const bioData = document.querySelector(".bioData");
-const services = document.querySelector(".services");
 
 document.querySelector(".portfolio-link").addEventListener("click", (e) => {
   e.preventDefault();
@@ -83,14 +81,4 @@ document.querySelector(".portfolio-link").addEventListener("click", (e) => {
 document.querySelector(".contact-link").addEventListener("click", (e) => {
   e.preventDefault();
   contact.scrollIntoView({ behavior: "smooth" });
-});
-
-document.querySelector(".service-link").addEventListener("click", (e) => {
-  e.preventDefault();
-  services.scrollIntoView({ behavior: "smooth" });
-});
-
-document.querySelector(".about-link").addEventListener("click", (e) => {
-  e.preventDefault();
-  bioData.scrollIntoView({ behavior: "smooth" });
 });
