@@ -82,3 +82,30 @@ document.querySelector(".contact-link").addEventListener("click", (e) => {
   e.preventDefault();
   contact.scrollIntoView({ behavior: "smooth" });
 });
+
+// =========================================
+//  animation Number
+// ========================================
+
+let countNum = document.querySelectorAll(".counter-numbers");
+let speed = 200;
+
+countNum.forEach((curElem) => {
+  const incrementNumfunc = () => {
+    let maxNum = parseInt(curElem.dataset.number);
+    let minNum = parseInt(curElem.innerText);
+    // console.log(minNum);
+
+    let unicNumspeed = Math.trunc(maxNum / speed);
+    // console.log(unixNum);
+
+    if (minNum < maxNum) {
+      setTimeout(() => {
+        incrementNumfunc();
+        curElem.innerText = `${minNum + unicNumspeed}+`;
+      }, 10);
+    }
+  };
+
+  incrementNumfunc();
+});
