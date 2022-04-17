@@ -127,3 +127,23 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(workSectioon_data);
+
+//====================== LAZY Loading IMage replacement
+
+const lazy_img = document.querySelector("img[data-src]");
+
+// console.log(lazy_img);
+
+const lazyFunc = (entries) => {
+  const [entry] = entries;
+  console.log(entry);
+  if (entry.isIntersecting == false) return;
+  entry.target.src = lazy_img.dataset.src;
+};
+
+const lazy_observer = new IntersectionObserver(lazyFunc, {
+  root: null,
+  threshold: 0,
+});
+
+lazy_observer.observe(lazy_img);
