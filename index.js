@@ -83,29 +83,47 @@ document.querySelector(".contact-link").addEventListener("click", (e) => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
 
-// =========================================
-//  animation Number
-// ========================================
+const workSectioon_data = document.querySelector(".section-work-data");
 
-let countNum = document.querySelectorAll(".counter-numbers");
-let speed = 200;
+const workObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+    // console.log(entry);
 
-countNum.forEach((curElem) => {
-  const incrementNumfunc = () => {
-    let maxNum = parseInt(curElem.dataset.number);
-    let minNum = parseInt(curElem.innerText);
-    // console.log(minNum);
+    if (entry.isIntersecting == false) return;
 
-    let unicNumspeed = Math.trunc(maxNum / speed);
-    // console.log(unixNum);
+    // =========================================
+    //  animation Number
+    // ========================================
 
-    if (minNum < maxNum) {
-      setTimeout(() => {
-        incrementNumfunc();
-        curElem.innerText = `${minNum + unicNumspeed}+`;
-      }, 10);
-    }
-  };
+    let countNum = document.querySelectorAll(".counter-numbers");
+    let speed = 100;
 
-  incrementNumfunc();
-});
+    countNum.forEach((curElem) => {
+      const incrementNumfunc = () => {
+        let maxNum = parseInt(curElem.dataset.number);
+        let minNum = parseInt(curElem.innerText);
+        // console.log(minNum);
+
+        let unicNumspeed = Math.trunc(maxNum / speed);
+        // console.log(unixNum);
+
+        if (minNum < maxNum) {
+          setTimeout(() => {
+            incrementNumfunc();
+            curElem.innerText = `${minNum + unicNumspeed}+`;
+          }, 10);
+        }
+      };
+
+      incrementNumfunc();
+    });
+    observer.unobserve(workSectioon_data);
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+workObserver.observe(workSectioon_data);
