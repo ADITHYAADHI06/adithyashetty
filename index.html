@@ -469,7 +469,7 @@
         <h2 class="common-heading">Contact Us</h2>
       </div>
       <section class="section-contact-main contact-container">
-        <form action="#">
+        <form action="https://formspree.io/f/mgednpgr" method="POST">
           <div class="gird gird-two-column">
             <div>
               <label for="username"></label>
@@ -478,21 +478,32 @@
                 name="username"
                 placeholder="username"
                 id="username"
+                required
+                autocomplete="off"
               />
             </div>
             <div>
               <label for="email"></label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="demo@gmail.com"
                 id="email"
+                required
+                autocomplete="off"
               />
             </div>
           </div>
           <div>
             <label for="subject"></label>
-            <input type="text" name="subject" placeholder="subject" id="" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="subject"
+              id=""
+              required
+              autocomplete="off"
+            />
           </div>
           <div>
             <label for="textarea"></label>
@@ -501,6 +512,9 @@
               id="textarea"
               cols="30"
               rows="10"
+              required
+              autocomplete="off"
+              min="6"
             ></textarea>
           </div>
           <div>
