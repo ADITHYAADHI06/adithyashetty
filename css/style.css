@@ -1127,6 +1127,9 @@ section {
     gap: 4rem;
   }
 
+  .swiper-pagination{
+    display: none;
+  }
 
   .portfolio-images,
   .service,

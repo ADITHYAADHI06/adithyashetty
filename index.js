@@ -147,3 +147,38 @@ const lazy_observer = new IntersectionObserver(lazyFunc, {
 });
 
 lazy_observer.observe(lazy_img);
+
+const myJsmedia = (widthSize) => {
+  if (widthSize.matches) {
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      autoplay: {
+        Delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  } else {
+    new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 40,
+      autoplay: {
+        Delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+};
+const widthSize = window.matchMedia("(max-width:750px)");
+// at run time
+myJsmedia(widthSize);
+
+widthSize.addEventListener("change", myJsmedia);
