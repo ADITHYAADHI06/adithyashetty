@@ -9,6 +9,85 @@
     , initial-scale=1.0"
     />
 
+    <!-- FaviIcon -->
+
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- SEO -->
     <meta
       name="description"
@@ -58,24 +137,24 @@
    ========================================================================= -->
 
     <header class="header">
-      <img src="images/logo.png" class="logo" alt="logo" />
+      <img src="images/Logo_Portfolio-2.png" class="logo" alt="logo" />
 
       <nav class="navbar">
         <ul class="navbar-lists">
-          <li><a href="/index.html" class="navbar-link home-link">HOME</a></li>
+          <li><a href="/index.html" class="navbar-link btnleft_to_right left_to_right  home-link">HOME</a></li>
           <li>
-            <a href="/about.html" class="navbar-link about-link">About</a>
+            <a href="/about.html" class="navbar-link btnleft_to_right left_to_right about-link">About</a>
           </li>
           <li>
-            <a href="/service.html" class="navbar-link service-link"
+            <a href="/service.html" class="navbar-link btnleft_to_right left_to_right service-link"
               >Services</a
             >
           </li>
           <li>
-            <a href="#" class="navbar-link portfolio-link">Portfolio</a>
+            <a href="#section-portfolio" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
           </li>
           <li>
-            <a href="/contact.html" class="navbar-link contact-link">Contact</a>
+            <a href="/contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -91,7 +170,7 @@
    ========================================================================= -->
 
     <main>
-      <div class="section-hero section">
+      <div class="section section-hero">
         <div class="container gird-two-column gird flex">
           <div class="section-hero-data">
             <p class="hero-top-data">this is me</p>
@@ -104,7 +183,7 @@
               blogger. A Full stack Developer, content creater and blogger
             </p>
             <div>
-              <a href="#" class="btn hireme-btn">Hire me</a>
+              <a href="mailto:adithyashetty102@gmail.com" class="btn  hireme-btn getintouch">get in touch</a>
             </div>
           </div>
 
@@ -137,54 +216,52 @@
             doloremque aut quae reprehenderit, at deserunt.
           </p>
 
-          <div class="btn-data-cv">
-            <a href="#">Download CV</a>
-          </div>
+
           <div class="bio-data-stats">
+           
             <div class="bio-stats">
-              <h3>HTML & CSS</h3>
-              <div class="bio-progress-bar bio-progress-1">
-                <span>85%</span>
-              </div>
+              <h3 class="common-heading">Front-End Skills</h3>
+              <div class="skills">
+              <span class="bio-skill-pill">HTML</span>
+              <span class="bio-skill-pill">CSS</span>
+              <span class="bio-skill-pill">Bootstrap 5</span>
+            </div>
+              <div class="skills">
+              <span class="bio-skill-pill">JavaScript</span>
+              <span class="bio-skill-pill">React Js</span>
             </div>
 
-            <div class="bio-stats">
-              <h3>Bootstrap 5</h3>
-              <div class="bio-progress-bar bio-progress-2">
-                <span>70%</span>
-              </div>
-            </div>
+          </div>
 
             <div class="bio-stats">
-              <h3>JavaScript</h3>
-              <div class="bio-progress-bar bio-progress-3">
-                <span>70%</span>
-              </div>
+            <h3 class="common-heading">Back-End Skills</h3>
+            <div class="skills">
+            <span class="bio-skill-pill">Node Js</span>
+            <span class="bio-skill-pill">Express Js</span>
+            <span class="bio-skill-pill">Mango DB</span>
+          </div>
+          <div class="skills">
+            <span class="bio-skill-pill">Mern Stack Basics</span>
+          </div>
             </div>
 
-            <div class="bio-stats">
-              <h3>React</h3>
-              <div class="bio-progress-bar bio-progress-4">
-                <span>65%</span>
-              </div>
+            <div class="btn-data-cv hireme-btn">
+              <a href="./images/Adithya Resume.pdf">Download CV</a>
             </div>
 
-            <div class="bio-stats">
-              <h3>Node js</h3>
-              <div class="bio-progress-bar bio-progress-5">
-                <span>loading..</span>
-              </div>
+           
+
+            </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    
 
     <!-- =======================================================================
         Our portfolio Section Start
    ========================================================================= -->
 
-    <section class="section section-portfolio">
+    <section class="section section-portfolio" id="section-portfolio">
       <div class="container">
         <h2 class="common-heading">Latest Works</h2>
         <p>
@@ -238,31 +315,6 @@
     </section>
 
     <!-- =======================================================================
-        Our work Section Start
-   ========================================================================= -->
-
-    <section class="section section-work-data">
-      <div class="container gird gird-four-column">
-        <div>
-          <h2 class="counter-numbers" data-number="700">0</h2>
-          <p>project completed</p>
-        </div>
-        <div>
-          <h2 class="counter-numbers" data-number="500">0</h2>
-          <p>Happy Clients</p>
-        </div>
-        <div>
-          <h2 class="counter-numbers" data-number="3000">0</h2>
-          <p>Cup of coffies</p>
-        </div>
-        <div>
-          <h2 class="counter-numbers" data-number="2000">0</h2>
-          <p>real professionals</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- =======================================================================
         Our portfolio Section Start
    ========================================================================= -->
 
@@ -303,32 +355,6 @@
             rem tempora odit ipsam maxime id?
           </p>
         </div>
-        <div class="service-box">
-          <ion-icon name="camera-outline" class="service-icon"></ion-icon>
-          <h3>Photography</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            rem tempora odit ipsam maxime id?
-          </p>
-        </div>
-
-        <div class="service-box">
-          <ion-icon name="images-sharp" class="service-icon"></ion-icon>
-          <h3>Graphics Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            rem tempora odit ipsam maxime id?
-          </p>
-        </div>
-
-        <!-- <div class="service-box">
-          <ion-icon name="call-outline" class="service-icon"></ion-icon>
-          <h3>24&times;7 Support</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            rem tempora odit ipsam maxime id?
-          </p>
-        </div> -->
       </div>
     </section>
 
@@ -437,7 +463,9 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores odio
           quis totam nisi atque omnis?
         </p>
-        <a href="/contact.html" class="btn-data-cv">Hire Me</a>
+        <div class="btn-data-cv hireme-btn">
+          <a href="/contact.html">Hire Me</a>
+        </div>    
       </div>
     </section>
 
@@ -453,7 +481,7 @@
               <input
                 type="text"
                 name="username"
-                placeholder="username"
+                placeholder="Enter your name"
                 id="username"
                 required
                 autocomplete="off"
@@ -464,7 +492,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="demo@gmail.com"
+                placeholder="Enter your email"
                 id="email"
                 required
                 autocomplete="off"
@@ -616,7 +644,7 @@
             <div>
               <p>
                 <span><ion-icon name="location-outline"></ion-icon> </span>
-                Pune, India
+              Ujire, India
               </p>
             </div>
             <div>
@@ -636,20 +664,20 @@
       </div>
 
       <div class="f-social-icons">
-        <a href="#" target="_blank"
-          ><ion-icon name="logo-instagram" class="icons insta"></ion-icon
+        <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"
+        ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
+      ></a>
+        <a href="https://github.com/ADITHYAADHI06" target="_blank"
+          ><ion-icon name="logo-github" class="icons insta"></ion-icon
         ></a>
-        <a href="#" target="_blank"
-          ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
-        ></a>
-        <a href="#" target="_blank"
+        <a href="https://wa.me/8496952366" target="_blank"
           ><ion-icon name="logo-whatsapp" class="icons whatsapp"></ion-icon
         ></a>
       </div>
 
       <div class="f-credits">
         <p>
-          Copyright @2022 All rights reserved | This Portfolio is made by
+          Copyright @2023 All rights reserved | This Portfolio is made by
           Adithya Shetty
         </p>
       </div>
