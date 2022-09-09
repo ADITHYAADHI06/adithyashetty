@@ -45,6 +45,7 @@ h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+  
 }
 
 h1 {
@@ -52,6 +53,7 @@ h1 {
   font-weight: 600;
   font-size: 6rem;
   line-height: 8.5rem;
+
 }
 
 h3 {
@@ -84,6 +86,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999; */
 }
 
 .header .logo {
@@ -140,66 +146,7 @@ section {
   height: 200px;
 } */
 
-@media (max-width: 700px) {
-  .header {
-    position: relative;
-    padding: 0 3rem 0 3.5rem;
 
-  }
-
-  .navbar {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--helper);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(100%);
-    transition: all 0.5s linear;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-  .navbar-lists {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .navbar-link:link,
-  .navbar-link:visited {
-    color: var(--white);
-  }
-
-  .mobile-btn {
-    display: block;
-    z-index: 99999;
-    border: 3px solid #212529;
-    color: #212529;
-    padding: 0.5rem;
-  }
-
-  .active .navbar {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .active .mobile-btn .fa-xmark {
-    display: block;
-  }
-  .active .mobile-btn .fa-bars {
-    display: none;
-
-  }
-}
 
 /*===============================
  reuseable start 
@@ -262,11 +209,12 @@ section {
 }
 
 .common-heading {
-  font-size: 4.8rem;
   margin-bottom: 5rem;
   position: relative;
-  font-weight: 600;
   text-transform: capitalize;
+  font-weight: 800;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 5rem;
 }
 
 .common-heading::before {
@@ -286,7 +234,16 @@ section {
   top: 114%;
   left: 1.5rem;
   height: 0.3rem;
-  min-width: 20.4rem;
+  min-width: 28.4rem;
+  background-color: var(--helper);
+}
+.contact .common-heading::after {
+  content: "";
+  position: absolute;
+  top: 114%;
+  left: 1.5rem;
+  height: 0.3rem;
+  min-width: 22.4rem;
   background-color: var(--helper);
 }
 
@@ -306,10 +263,15 @@ section {
 }
 
 .hero-top-data {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  display: inline;
+  margin-left: 0.4rem;
+  width: max-content;
+  font-size: 1.8rem;
   color: #56BCD2;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 .hero-image {
@@ -324,9 +286,10 @@ section {
 }
 
 .hero-heading {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 6.4rem;
+  /* text-transform: uppercase; */
+  font-weight: 900;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7.0rem;
 }
 
 .hero-para {
@@ -338,12 +301,15 @@ section {
 
 .about-para {
   margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   max-width: 60rem;
 }
 
+
 .hireme-btn:hover {
-  transform: translateY(-0.7rem);
+  transform: translateY(-0.5rem);
 }
 
 /* ===============
@@ -362,7 +328,7 @@ section {
 .section-bioData .common-heading::before {
   content: "";
   position: absolute;
-  top: 98%;
+  top: 106%;
   left: 0;
   height: 1.2rem;
   width: 1.2rem;
@@ -373,7 +339,7 @@ section {
 .section-bioData .common-heading::after {
   content: "";
   position: absolute;
-  top: 105%;
+  top: 113%;
   left: 1.2rem;
   height: 0.3rem;
   min-width: 20.4rem;
@@ -390,9 +356,12 @@ section {
 .Bio-logo {
   height: 80%;
   width: 80%;
-  box-shadow: -2rem -2rem 0 0 var(--helper);
+  border-radius:  87% 13% 85% 15% / 9% 91% 9% 91% ;
+  /* box-shadow: -2rem -2rem 0px 0px #000000; */
+  box-shadow: 0rem 0rem 0px 10px #000000;
   display: inline-block;
 }
+
 
 .section-bioData .about-para{
   margin-top: 1.5rem;
@@ -507,7 +476,9 @@ border-radius: 20px;
 }
 
 .section-portfolio p {
-  max-width: 60rem;
+  max-width: 100rem;
+  line-height: 2.2rem;
+  color: #000000;
 }
 
 .p-btns {
@@ -617,10 +588,12 @@ border-radius: 20px;
 
 .section-services p {
   max-width: 60rem;
+  line-height: 2.2rem;
+  color: #000000a7;
 }
 
 .section-services .gird {
-  margin-top: 6.5rem;
+  margin-top: 5rem;
   gap: 6rem;
   row-gap: 8rem;
 }
@@ -997,11 +970,19 @@ border-radius: 20px;
 
 
 @media (max-width:1300px) {
+
   .container {
     max-width: 140rem;
     padding: 0 3rem 0 8rem;
   }
-
+  .container_for_hero{
+    margin-top: 1.5rem;
+    padding: 0 3rem 0 12rem;
+  }
+  .section-bioData .container {
+    /* margin: 0 auto; */
+    padding-top: 0rem;
+  }
   .navbar-lists {
     display: flex;
     gap: 4.3rem;
@@ -1019,10 +1000,8 @@ border-radius: 20px;
   }
 
   .section-bioData .container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-top: 0rem;
-    padding: 0 3rem 0 3rem;
-
   }
 
   .portfolio-images,
@@ -1030,6 +1009,7 @@ border-radius: 20px;
   .testimonials {
     padding: 0 4rem;
   }
+ 
 }
 
 @media (max-width:1030px) {
@@ -1046,9 +1026,12 @@ border-radius: 20px;
     max-width: 950rem;
     padding: 0 1rem 0 3rem;
     padding-top: 0rem;
-    /* padding: 0 3rem 0 3rem;
-               */
+    /* padding: 0 3rem 0 3rem; */
+              
   }
+  .bio-data .about-para{
+    padding-right: 0.5rem;
+ }
 
   .bio-data {
     margin: auto 0;
@@ -1082,13 +1065,8 @@ border-radius: 20px;
     padding: 0 5rem;
 
   }
-  /* .gird-two-column {
-    grid-template-columns: repeat(2, 1fr);
-  }
-   */
+
  
-
-
   .testimonials {
     margin-bottom: 7rem;
 
@@ -1157,6 +1135,66 @@ border-radius: 20px;
   }
  
 
+}
+@media (max-width: 700px) {
+  .header {
+    position: relative;
+    padding: 0 3rem 0 3.5rem;
+
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--helper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-lists {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    color: var(--white);
+  }
+
+  .mobile-btn {
+    display: block;
+    z-index: 99999;
+    border: 3px solid #212529;
+    color: #212529;
+    padding: 0.5rem;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-btn .fa-xmark {
+    display: block;
+  }
+  .active .mobile-btn .fa-bars {
+    display: none;
+
+  }
 }
 
  @media (max-width:680px) {
