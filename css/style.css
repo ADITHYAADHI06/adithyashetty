@@ -87,10 +87,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 999; */
 }
 
 .header .logo {
@@ -557,27 +553,6 @@ border-radius: 20px;
 
 
 /*===============================
-      Work Data Section 
- =================================*/
-
-.section-work-data {
-  background: var(--gradientSupport);
-  text-align: center;
-  transition: all .7s linear;
-  color: var(--white);
-
-}
-
-.counter-numbers {
-  font-size: 4rem;
-}
-
-.section-work-data p {
-  color: var(--white);
-  text-transform: capitalize;
-}
-
-/*===============================
       our services Section 
    =================================*/
 
@@ -868,10 +843,6 @@ border-radius: 20px;
   /* margin: 0 4rem 0 10rem; */
   padding-top: 4rem;
 }
-
-/* .section-footer .gird{
-     gap: 4rem;
-   } */
 .section-footer h3 {
   color: var(--white);
   margin-bottom: 3rem;
@@ -1096,10 +1067,7 @@ border-radius: 20px;
       }
 }
 @media (max-width:830px) {
-  html {
-    font-size: 40%;
-  }
-
+ 
   .container {
     max-width: 780rem;
     padding: 0 1rem 0 6rem;
@@ -1109,6 +1077,9 @@ border-radius: 20px;
   .testimonials {
     padding: 0 5rem;
 
+  }
+  .swiper-pagination{
+    display: none;
   }
 
   .testimonials {
@@ -1122,10 +1093,7 @@ border-radius: 20px;
 
 }
 @media (max-width:730px) {
-  html {
-    font-size: 38%;
-  }
-
+  
   .container {
     max-width: 670rem;
     padding: 0 0rem 0 5.5rem;
@@ -1160,7 +1128,6 @@ border-radius: 20px;
   .header {
     position: relative;
     padding: 0 3rem 0 3.5rem;
-
   }
 
   .navbar {
@@ -1175,7 +1142,6 @@ border-radius: 20px;
     align-items: center;
     transform: translateX(100%);
     transition: all 0.5s linear;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1217,16 +1183,6 @@ border-radius: 20px;
   }
 }
 
- @media (max-width:680px) {
-  html {
-    font-size: 40%;
-  }
-
-}
-
-
-/* below 630 */
-
 
 @media (max-width:650px) {
   html {
@@ -1240,21 +1196,34 @@ border-radius: 20px;
   display: none;
   }
 
+  .section:has(.container_for_hero) {
+    padding: 0rem 0rem 7rem 0rem;
+  }
 
 .section-hero .container{
-  padding: 0 5rem;
+  padding: 0 4rem;
 }
   .section-hero .gird-two-column{
       grid-template-columns: 1fr;
       
   }
-  .section-hero-data{
-    
+ 
+
+
+  .section-hero {
+    background-color: var(--bg);
+    padding-top: 2rem;
+  }
+  .section-hero-data {
+    margin-top: 0rem;
     text-align: center;
     align-items: center;
-    margin-top: 1.6rem;
+   }
   
+   .section-bioData .container {
+    padding: 0 1rem 0 1rem;
   }
+
   .section-hero-image img{
        width: 90%;
   }
@@ -1300,9 +1269,7 @@ border-radius: 20px;
   gap: 4rem;
   row-gap: 5rem;
 }
-/* .section-work-data .container{
-  padding: 0 2rem;
-} */
+
 .section-work-data .gird-four-column{
   grid-template-columns: 2fr 2fr;
 }
@@ -1320,10 +1287,7 @@ border-radius: 20px;
 .footer  .gird-four-column {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .section-footer .f-about ,
-.section-footer .f-address{
-  grid-column: 1/-1;
-} */
+ 
 .btns{
   display: flex;
   gap: 2rem;
@@ -1355,27 +1319,34 @@ border-radius: 20px;
 
 }
 
-@media (max-width:540px) {
+@media (max-width:600px) {
+  .container {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+@media (max-width:550px) {
   html {
     font-size: 50%;
   }
-  /* .hero-image {
-    max-width: 75%;
-  } */
-
+ 
   .container{
     max-width: 520px;
   }
+ 
   .header{
-    padding: 0rem 3.5rem;
+    padding: 0rem 3.5rem 0rem 0rem;
   }
   .header .logo{
-    width: 50%;
+    width: 27%;
   }
+
   
 br{
   display: inline;
 }
+
+
 .section-services .gird-three-column , .section-portfolio .gird-three-column{
   grid-template-columns: 1fr;
 }
@@ -1402,7 +1373,16 @@ br{
     font-size: 2.8rem;
   }
 }
-@media (max-width:380px) {
+@media (max-width:432px) {
+.section-hero .container {
+  padding: 0 2rem !important;
+}
+  .section-bioData .container {
+    padding: 0 1rem 0 1rem;
+}
+}
+
+@media (max-width:400px) {
 
   html {
     font-size: 46%;
@@ -1422,12 +1402,12 @@ br{
     width: 35%;
   }
 
+ 
   .section:has(.container_for_hero) {
-    padding: 1rem 0rem 7rem 0rem;
+    padding: 0rem 0rem 7rem 0rem;
   }
-  .section-hero .container {
-    padding: 0rem 1rem;
-}
+
+
   .container_for_hero{
     margin-top: 0rem;
   }
@@ -1445,9 +1425,6 @@ br{
     
  
 
-  .section-bioData .container {
-    padding: 0 1rem 0 1rem;
-}
 
   .section-bioData .bio-data{
     margin: 0rem;
