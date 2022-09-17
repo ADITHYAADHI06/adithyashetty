@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About page</title>
+
+     <!-- Font for Heading -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+ 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,19 +30,32 @@
     <!-- css file-->
     <link rel="stylesheet" href="./css/style.css" />
 
+   
+
     <!-- Javascript file  -->
     <script defer src="./index.js"></script>
 
     <style>
       .header {
-        padding: 0 4.8rem;
+        /* padding: 0 4.8rem; */
         height: 7rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: fixed;
         width: 100%;
+        z-index: 999;
       }
+
+      @media (max-width:650px) {
+
+        .section-bioData .container {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+          }  
+
+      }
+
     </style>
   </head>
   <body>
@@ -59,7 +78,7 @@
             >
           </li>
           <li>
-            <a href="/index.html#section-portfolio" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
+            <a href="/index.html#Projects" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
           </li>
           <li>
             <a href="/contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
@@ -77,79 +96,66 @@
         Our Bio-data Section Start
    ========================================================================= -->
 
-   <div class="section-bioData section">
-    <div class="container bioData gird-two-column gird flex">
-      <div class="bio-image">
-        <img
-          src="./images/biodatalazy.jpg"
-          data-src="./images/biodata.jpg"
-          alt="bioimage"
-          class="Bio-logo"
-        />
-      </div>
-      <div class="bio-data">
-        <h2 class="common-heading">My Bio Data</h2>
-        <p class="about-para">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est sequi
-          reiciendis perspiciatis nihil dignissimos fugiat harum, eos non
-          doloremque aut quae reprehenderit, at deserunt.
-        </p>
+          <div class="section-bioData section" id="About">
+            <div class="container bioData gird-two-column gird flex" >
+              <div class="bio-image">
+                <img
+                  src="./images/biodata.jpg"
+                  data-src="./images/biodata.jpg"
+                  alt="bioimage"
+                  class="Bio-logo"
+                />
+              </div>
+              <div class="bio-data">
+                <h2 class="common-heading">About Me..</h2>
+                <p class="about-para ">
+                  I am extremely proficient in Front-End Development using HTML5, CSS3, Bootstrap-5, Javascript, React.Js And apart from Front-End, I have Basic knowledge in Back-End using Node.Js & MongoDB as well as, I have Good knowledge in Creating and Handling REST API using Node.Js, and continuously engage in trying to extend my skills with new technology.
+                </p>
+      
+                <div class="bio-data-stats">
+                 
+                  <div class="bio-stats">
+                    <h3 class="common-heading">Front-End Skills</h3>
+                    <div class="skills">
+                    <span class="bio-skill-pill">HTML</span>
+                    <span class="bio-skill-pill">CSS</span>
+                    <span class="bio-skill-pill">Bootstrap 5</span>
+                  </div>
+                    <div class="skills">
+                    <span class="bio-skill-pill">JavaScript</span>
+                    <span class="bio-skill-pill">React Js</span>
+                    <span class="bio-skill-pill">API</span>
+                  </div>
+                </div>
+      
+                  <div class="bio-stats">
+                  <h3 class="common-heading">Back-End Skills</h3>
+                  <div class="skills">
+                  <span class="bio-skill-pill">Node Js</span>
+                  <span class="bio-skill-pill">Express Js</span>
+                  <span class="bio-skill-pill">Mango DB</span>
+                </div>
+                <div class="skills">
+                  <span class="bio-skill-pill">Mern Stack Basics</span>
+                </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
 
-
-        <div class="bio-data-stats">
-         
-          <div class="bio-stats">
-            <h3 class="common-heading">Front-End Skills</h3>
-            <div class="skills">
-            <span class="bio-skill-pill">HTML</span>
-            <span class="bio-skill-pill">CSS</span>
-            <span class="bio-skill-pill">Bootstrap 5</span>
-          </div>
-            <div class="skills">
-            <span class="bio-skill-pill">JavaScript</span>
-            <span class="bio-skill-pill">React Js</span>
-          </div>
-
-        </div>
-
-          <div class="bio-stats">
-          <h3 class="common-heading">Back-End Skills</h3>
-          <div class="skills">
-          <span class="bio-skill-pill">Node Js</span>
-          <span class="bio-skill-pill">Express Js</span>
-          <span class="bio-skill-pill">Mango DB</span>
-        </div>
-        <div class="skills">
-          <span class="bio-skill-pill">Mern Stack Basics</span>
-        </div>
-          </div>
-
-          <div class="btn-data-cv hireme-btn">
-            <a href="#">Download CV</a>
-          </div>
-
-         
-
-          </div>
-          </div>
-        </div>
-      </div>
-  
-
-
-    <!-- footer link -->
+   <!-- footer link -->
     <footer class="footer section-footer">
       <div class="container gird gird-four-column">
         <div class="f-about">
           <h3>About</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, qui
-            nulla ex facere ipsum vero!
+            Adithya shetty - Mern Stack Developer. Now helping students via Scholars Go website.
           </p>
         </div>
         <!-- end  -->
         <div class="f-links">
-          <h3>Links</h3>
+          <h3>Navigations</h3>
           <ul>
             <li>
               <span>
@@ -165,7 +171,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">About</a>
+              ><a href="#About">About</a>
             </li>
             <li>
               <span>
@@ -173,7 +179,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Services</a>
+              ><a href="/index.html#Projects">Projects</a>
             </li>
             <li>
               <span>
@@ -181,7 +187,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Portfolio</a>
+              ><a href="/service.html">Services</a>
             </li>
             <li>
               <span>
@@ -189,7 +195,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Contact</a>
+              ><a href="#">More</a>
             </li>
           </ul>
         </div>
@@ -203,7 +209,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Home</a>
+              ><a href="https://wa.me/8496952366">UI Design</a>
             </li>
             <li>
               <span>
@@ -211,7 +217,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">About</a>
+              ><a href="https://wa.me/8496952366">Development</a>
             </li>
             <li>
               <span>
@@ -219,7 +225,7 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Services</a>
+              ><a href="https://wa.me/8496952366">Hosting</a>
             </li>
             <li>
               <span>
@@ -227,16 +233,9 @@
                   name="arrow-forward-outline"
                   class="footer-icon"
                 ></ion-icon></span
-              ><a href="#">Portfolio</a>
+              ><a href="https://wa.me/8496952366">Maintaince</a>
             </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#">Online courses</a>
-            </li>
+         
           </ul>
         </div>
         <!-- end -->
@@ -246,7 +245,7 @@
             <div>
               <p>
                 <span><ion-icon name="location-outline"></ion-icon> </span>
-                Pune, India
+              Ujire, India
               </p>
             </div>
             <div>
@@ -258,7 +257,7 @@
             <div>
               <p>
                 <span><ion-icon name="mail-open-outline"></ion-icon> </span>
-                <a href="mailto:adishettygu102@gmail.com">adithya@gmail.com</a>
+                <a href="mailto:adishettygu102@gmail.com" wrap>Contact us</a>
               </p>
             </div>
           </address>
@@ -266,25 +265,26 @@
       </div>
 
       <div class="f-social-icons">
-        <a href="#" target="_blank"
-          ><ion-icon name="logo-instagram" class="icons insta"></ion-icon
+        <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"
+        ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
+      ></a>
+        <a href="https://github.com/ADITHYAADHI06" target="_blank"
+          ><ion-icon name="logo-github" class="icons insta"></ion-icon
         ></a>
-        <a href="#" target="_blank"
-          ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
-        ></a>
-        <a href="#" target="_blank"
+        <a href="https://wa.me/8496952366" target="_blank"
           ><ion-icon name="logo-whatsapp" class="icons whatsapp"></ion-icon
         ></a>
       </div>
 
       <div class="f-credits">
         <p>
-          Copyright @2022 All rights reserved | This Portfolio is made by
+          Copyright @2023 All rights reserved | This Portfolio is made by
           Adithya Shetty
         </p>
       </div>
     </footer>
 
+    
     <!-- icons link -->
     <script
       type="module"
@@ -295,5 +295,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>
