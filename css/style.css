@@ -129,25 +129,16 @@ li {
 
 .fa-solid {
   color: #212529;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+  padding: .2rem;
   cursor: pointer;
 }
 
 .fa-xmark {
   display: none;
+  font-size: 2.4rem;
+  padding: .2rem .7rem;
 }
-
-/* main {
-  width: 100%;
-  height: 300px;
-}
-section {
-  width: 100%;
-
-  height: 200px;
-} */
-
-
 
 /*===============================
  reuseable start 
@@ -782,6 +773,8 @@ border-radius: 20px;
   display: none;
 }
 
+
+
 /*===============================
       our freelancing Section 
    =================================*/
@@ -1190,13 +1183,13 @@ border-radius: 20px;
 
   .navbar-lists {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
   }
 
   .navbar-link:link,
   .navbar-link:visited {
+    font-size: 2.2rem;
     color: var(--white);
   }
 
@@ -1244,7 +1237,10 @@ border-radius: 20px;
     margin: 0 auto; 
   }
   br{
-  display: none;}
+  display: none;
+  }
+
+
 .section-hero .container{
   padding: 0 5rem;
 }
@@ -1344,18 +1340,17 @@ border-radius: 20px;
   padding: 1.5rem 3.1rem;
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 6px;
   color: #000000ac;
-  transition: all 0.3s ease;
+  transition: all .5s linear;
 }
 
 .cv-transperent:hover{
-  border: 1px solid var(--helper);
- 
-  color: #000000ac;
-  transition: all 0.3s ease;
+  border: 1px solid black;
+  background-color: #000000;
+  color: white;
 }
 
 }
@@ -1428,10 +1423,10 @@ br{
   }
 
   .section:has(.container_for_hero) {
-    padding: 2rem 0rem 7rem 0rem;
+    padding: 1rem 0rem 7rem 0rem;
   }
   .section-hero .container {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
 }
   .container_for_hero{
     margin-top: 0rem;
@@ -1450,6 +1445,9 @@ br{
     
  
 
+  .section-bioData .container {
+    padding: 0 1rem 0 1rem;
+}
 
   .section-bioData .bio-data{
     margin: 0rem;
