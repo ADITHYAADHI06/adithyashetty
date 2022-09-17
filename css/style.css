@@ -1196,6 +1196,10 @@ border-radius: 20px;
   display: none;
   }
 
+  .hero-heading {
+    font-size: 6.0rem;
+}
+
   .section:has(.container_for_hero) {
     padding: 0rem 0rem 7rem 0rem;
   }
@@ -1204,11 +1208,9 @@ border-radius: 20px;
   padding: 0 4rem;
 }
   .section-hero .gird-two-column{
-      grid-template-columns: 1fr;
-      
+    grid-template-columns: 1fr;  
   }
- 
-
+  
 
   .section-hero {
     background-color: var(--bg);
@@ -1323,6 +1325,13 @@ border-radius: 20px;
   .container {
     padding: 0 2rem 0 2rem;
   }
+  .hero-heading {
+    font-size: 5.0rem;
+}
+.hero-para {
+  margin-top: 1rem;
+  margin-bottom: 3.3rem;
+}
 }
 
 @media (max-width:550px) {
@@ -1342,11 +1351,6 @@ border-radius: 20px;
   }
 
   
-br{
-  display: inline;
-}
-
-
 .section-services .gird-three-column , .section-portfolio .gird-three-column{
   grid-template-columns: 1fr;
 }
@@ -1373,6 +1377,13 @@ br{
     font-size: 2.8rem;
   }
 }
+
+/* @media (max-width:472px) {
+  .hero-heading {
+    font-size: 5.0rem;
+}
+} */
+
 @media (max-width:432px) {
 .section-hero .container {
   padding: 0 2rem !important;
@@ -1396,17 +1407,17 @@ br{
     padding: 0 2rem 0 2rem;
   }
   .header{
+    height: 7rem;
     padding: 0rem 3.5rem 0rem 1rem;
   }
+
   .header .logo{
-    width: 35%;
+    width: 30%;
   }
 
- 
   .section:has(.container_for_hero) {
     padding: 0rem 0rem 7rem 0rem;
   }
-
 
   .container_for_hero{
     margin-top: 0rem;
@@ -1420,12 +1431,10 @@ br{
   font-size: 2.0rem;
 }
   .hero-image {
-    max-width: 100%;
+    max-width: 88%;
   }
     
  
-
-
   .section-bioData .bio-data{
     margin: 0rem;
     padding: 0rem 1rem;
