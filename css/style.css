@@ -6,8 +6,6 @@
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
-
-  
 }
 
 :root {
@@ -92,8 +90,6 @@ li {
 .header .logo {
   height: 6.5rem;
   width: 130px;
-  cursor: pointer;
-
 }
 
 .navbar-lists {
@@ -108,7 +104,6 @@ li {
   font-size: 1.5rem;
   letter-spacing: .8px;
   font-weight: 600;
-  /* font-weight: 500; */
   text-transform: uppercase;
   color: var(--black);
   transition: color 0.3s linear;
@@ -124,7 +119,8 @@ li {
 }
 
 .fa-solid {
-  color: #212529;
+  /* color: #212529; */
+  color: #414347;
   font-size: 2.2rem;
   padding: .2rem;
   cursor: pointer;
@@ -1162,8 +1158,9 @@ border-radius: 20px;
   .mobile-btn {
     display: block;
     z-index: 99999;
-    border: 3px solid #212529;
-    color: #212529;
+    /* border: 3px solid #212529; */
+    border: 2px solid #414347;
+    border-radius: 3px;
     padding: 0.5rem;
   }
 
