@@ -1235,6 +1235,11 @@ li {
     margin: 0 auto;
   }
 
+  .container_for_hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   br {
     display: none;
   }
@@ -1272,7 +1277,7 @@ li {
   }
 
   .section-hero-image img {
-    width: 90%;
+    width: 60%;
   }
 
   .Bio-logo {
@@ -1400,6 +1405,8 @@ li {
     max-width: 520px;
   }
 
+
+
   .header {
     padding: 0rem 3.5rem 0rem 0rem;
   }
@@ -1439,11 +1446,15 @@ li {
   }
 }
 
-/* @media (max-width:472px) {
-  .hero-heading {
+@media (max-width:472px) {
+
+  /* .hero-heading {
     font-size: 5.0rem;
-}
 } */
+  .section-hero-image img {
+    width: 65%;
+  }
+}
 
 @media (max-width:432px) {
   .section-hero .container {
@@ -1452,6 +1463,10 @@ li {
 
   .section-bioData .container {
     padding: 0 1rem 0 1rem;
+  }
+
+  .section-hero-image img {
+    width: 65%;
   }
 }
 
@@ -1469,6 +1484,7 @@ li {
     max-width: 120rem;
     padding: 0 2rem 0 2rem;
   }
+
 
   .header {
     height: 7rem;
@@ -1497,9 +1513,13 @@ li {
     font-size: 2.0rem;
   }
 
-  .hero-image {
-    max-width: 88%;
+  .section-hero-image img {
+    width: 100%;
   }
+
+  /* .hero-image {
+    width: 100%;
+  } */
 
 
   .section-bioData .bio-data {
