@@ -960,6 +960,8 @@ li {
 
 }
 
+
+
 .scroll-up {
   background-color: var(--helper);
   /* background-color: #1e5760; */
@@ -1212,6 +1214,11 @@ li {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 1;
+  }
+
+  .active .common-heading {
+    z-index: 0;
   }
 
   .active .mobile-btn .fa-xmark {
@@ -1221,6 +1228,10 @@ li {
   .active .mobile-btn .fa-bars {
     display: none;
 
+  }
+
+  .scrollTop-style {
+    z-index: 0;
   }
 }
 
