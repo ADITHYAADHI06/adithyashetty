@@ -260,6 +260,7 @@ li {
   margin-left: 0.4rem;
   width: max-content;
   font-size: 1.8rem;
+  /* color: #6cc4d7; */
   color: #56BCD2;
   font-family: 'Quicksand', sans-serif;
 
@@ -281,6 +282,7 @@ li {
   font-weight: 900;
   font-family: 'Quicksand', sans-serif;
   font-size: 6.5rem;
+  color: #2c302d;
 }
 
 .hero-para {
@@ -370,6 +372,10 @@ li {
 
 .skills {
   margin: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
 }
 
 .bio-data-stats .common-heading {
@@ -407,13 +413,23 @@ li {
   padding: 1rem 1.2rem;
   font-size: 1.5rem;
   border-radius: 20px;
+  /* line-height: 1rem; */
 }
 
+.mr-3 {
+  margin-right: 6px;
+}
+
+.extra-highlight {
+  /* box-shadow: 0rem 0rem 10px 2px #7af888; */
+  border: 3px solid #7af888;
+}
 
 
 .btn-data-cv {
   text-align: center;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .btn-data-cv a {
@@ -771,7 +787,7 @@ li {
 
 
 .section-freelancing {
-  background-image: url("../images/folio/netflix.png");
+  background-image: url("../images/folio/yt-1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   /* parrelex effect */

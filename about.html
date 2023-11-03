@@ -1,310 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About page</title>
 
-     <!-- Font for Heading -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
- 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About page</title>
 
-    <!-- font Awosome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css file-->
-    <link rel="stylesheet" href="./css/style.css" />
+  <!-- Font for Heading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Javascript file  -->
-    <script defer src="./index.js"></script>
+  <!-- font Awosome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css file-->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <style>
-      .header {
-        /* padding: 0 4.8rem; */
-        height: 7rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
-        z-index: 999;
+
+
+  <!-- Javascript file  -->
+  <script defer src="./index.js"></script>
+
+  <style>
+    .header {
+      /* padding: 0 4.8rem; */
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .section-bioData .container {
+      padding-top: 2.5rem;
+    }
+
+    @media (max-width:1280px) {
+      .section-bioData .container {
+        padding-top: 0rem;
       }
+    }
+
+    @media (max-width:650px) {
 
       .section-bioData .container {
-       padding-top: 2.5rem;
-} 
-      @media (max-width:1280px) {
-      .section-bioData .container {
-       padding-top: 0rem;
-} 
-}
-
-      @media (max-width:650px) {
-
-        .section-bioData .container {
-            margin-top: 4rem;
-            margin-bottom: 2rem;
-          }  
-
+        margin-top: 4rem;
+        margin-bottom: 2rem;
       }
 
-    </style>
-  </head>
-  <body>
-    <!-- =======================================================================
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =======================================================================
         Our Navbar Start
    ========================================================================= -->
 
-    <header class="header">
-      <img src="images/Logo_Portfolio-2.png" class="logo" alt="logo" />
+  <header class="header">
+    <img src="images/Logo_Portfolio-2.png" class="logo" alt="logo" />
 
-      <nav class="navbar">
-        <ul class="navbar-lists">
-          <li><a href="./index.html" class="navbar-link btnleft_to_right left_to_right  home-link">HOME</a></li>
-          <li>
-            <a href="./about.html" class="navbar-link btnleft_to_right left_to_right about-link">About</a>
-          </li>
-          <li>
-            <a href="./service.html" class="navbar-link btnleft_to_right left_to_right service-link"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="./index.html#Projects" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="./contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a href="./index.html" class="navbar-link btnleft_to_right left_to_right  home-link">HOME</a></li>
+        <li>
+          <a href="./about.html" class="navbar-link btnleft_to_right left_to_right about-link">About</a>
+        </li>
+        <li>
+          <a href="./service.html" class="navbar-link btnleft_to_right left_to_right service-link">Services</a>
+        </li>
+        <li>
+          <a href="./index.html#Projects"
+            class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="mobile-btn">
-        <i class="fa-solid fa-bars" name="open-icon"></i>
-        <i class="fa-solid fa-xmark" name="close-icon"></i>
-      </div>
-    </header>
+    <div class="mobile-btn">
+      <i class="fa-solid fa-bars" name="open-icon"></i>
+      <i class="fa-solid fa-xmark" name="close-icon"></i>
+    </div>
+  </header>
 
-     <!-- =======================================================================
+  <!-- =======================================================================
         Our Bio-data Section Start
    ========================================================================= -->
 
-          <div class="section-bioData section" id="About">
-            <div class="container bioData gird-two-column gird flex" >
-              <div class="bio-image">
-                <img
-                  src="./images/biodata.jpg"
-                  data-src="./images/biodata.jpg"
-                  alt="bioimage"
-                  class="Bio-logo"
-                />
-              </div>
-              <div class="bio-data">
-                <h2 class="common-heading">About Me..</h2>
-                <p class="about-para ">
-                  I am extremely proficient in Front-End Development using HTML5, CSS3, Bootstrap-5, Javascript, React.Js And apart from Front-End, I have Basic knowledge in Back-End using Node.Js & MongoDB as well as, I have Good knowledge in Creating and Handling REST API using Node.Js, and continuously engage in trying to extend my skills with new technology.
-                </p>
-      
-                <div class="bio-data-stats">
-                 
-                  <div class="bio-stats">
-                    <h3 class="common-heading">Front-End Skills</h3>
-                    <div class="skills">
-                    <span class="bio-skill-pill">HTML</span>
-                    <span class="bio-skill-pill">CSS</span>
-                    <span class="bio-skill-pill">Bootstrap 5</span>
-                  </div>
-                    <div class="skills">
-                    <span class="bio-skill-pill">JavaScript</span>
-                    <span class="bio-skill-pill">React Js</span>
-                    <span class="bio-skill-pill">API</span>
-                  </div>
-                </div>
-      
-                  <div class="bio-stats">
-                  <h3 class="common-heading">Back-End Skills</h3>
-                  <div class="skills">
-                  <span class="bio-skill-pill">Node Js</span>
-                  <span class="bio-skill-pill">Express Js</span>
-                  <span class="bio-skill-pill">Mango DB</span>
-                </div>
-                <div class="skills">
-                  <span class="bio-skill-pill">Mern Stack Basics</span>
-                </div>
-                  </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
+  <div class="section-bioData section" id="About">
+    <div class="container bioData gird-two-column gird flex">
+      <div class="bio-image">
+        <img src="./images/biodatalazy.jpg" alt="bioimage" class="Bio-logo" />
+      </div>
+      <div class="bio-data">
+        <h2 class="common-heading">About Me..</h2>
+        <p class="about-para ">
+          I am extremely proficient in Front-End Development using HTML5, CSS3, Bootstrap-5, TailWindCSS, Javascript,
+          React.Js, Redux, Jest, React Testing, and I Also have pretty good knowledge in Back-End Development using
+          Node.Js, Express.Js & MongoDB as well as, I have Good
+          knowledge in Creating and Handling REST API using Node.Js, and continuously engage in trying to extend my
+          skills with new technology.
+        </p>
 
-   <!-- footer link -->
-    <footer class="footer section-footer">
-      <div class="container gird gird-four-column">
-        <div class="f-about">
-          <h3>About</h3>
-          <p>
-            Adithya shetty - Mern Stack Developer. Now helping students via Scholars Go website.
-          </p>
-        </div>
-        <!-- end  -->
-        <div class="f-links">
-          <h3>Navigations</h3>
-          <ul>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#">Home</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#About">About</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="./index.html#Projects">Projects</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="./service.html">Services</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#">More</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end -->
-        <div class="f-services">
-          <h3>Services</h3>
-          <ul>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">UI Design</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Development</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Hosting</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Maintaince</a>
-            </li>
-         
-          </ul>
-        </div>
-        <!-- end -->
-        <div class="f-address">
-          <h3>Have a Question ?</h3>
-          <address>
-            <div>
-              <p>
-                <span><ion-icon name="location-outline"></ion-icon> </span>
-              Ujire, India
-              </p>
+        <div class="bio-data-stats">
+
+          <div class="bio-stats">
+            <h3 class="common-heading">Front-End Skills</h3>
+            <div class="skills">
+              <span class="bio-skill-pill extra-highlight">HTML</span>
+              <span class="bio-skill-pill extra-highlight">CSS</span>
+              <span class="bio-skill-pill extra-highlight">Bootstrap 5</span>
+              <span class="bio-skill-pill  extra-highlight">TailWind</span>
+              <span class="bio-skill-pill  extra-highlight">JavaScript</span>
+              <span class="bio-skill-pill  extra-highlight">React Js</span>
+              <span class="bio-skill-pill  extra-highlight">Redux</span>
+              <span class="bio-skill-pill extra-highlight">Jest</span>
+              <span class="bio-skill-pill extra-highlight">Next Js 13</span>
             </div>
-            <div>
-              <p>
-                <span><ion-icon name="call-outline"></ion-icon> </span>
-                <a href="tel:+918496952366">+91 8496952366</a>
-              </p>
+            <!-- <div class="skills">
+             
+            </div> -->
+          </div>
+
+          <div class="bio-stats">
+            <h3 class="common-heading">Back-End Skills</h3>
+            <div class="skills">
+              <span class="bio-skill-pill  extra-highlight ">Node Js</span>
+              <span class="bio-skill-pill  extra-highlight">Express Js</span>
+              <span class="bio-skill-pill  extra-highlight">Mongo DB</span>
+              <span class="bio-skill-pill extra-highlight">Git & GitHub </span>
+              <span class="bio-skill-pill extra-highlight">Mern Stack</span>
+              <span class="bio-skill-pill extra-highlight">Postman</span>
+              <span class="bio-skill-pill extra-highlight">RestFUL Api</span>
+
             </div>
-            <div>
-              <p>
-                <span><ion-icon name="mail-open-outline"></ion-icon> </span>
-                <a href="mailto:adishettygu102@gmail.com" wrap>Contact us</a>
-              </p>
-            </div>
-          </address>
+            <!-- <div class="skills">
+
+            
+            </div> -->
+          </div>
+
+          <!-- <div class="btn-data-cv hireme-btn">
+              <a href="./images/Adithya Resume.pdf">Download CV</a>
+            </div> -->
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="f-social-icons">
-        <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"
-        ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
-      ></a>
-        <a href="https://github.com/ADITHYAADHI06" target="_blank"
-          ><ion-icon name="logo-github" class="icons insta"></ion-icon
-        ></a>
-        <a href="https://wa.me/8496952366" target="_blank"
-          ><ion-icon name="logo-whatsapp" class="icons whatsapp"></ion-icon
-        ></a>
-      </div>
-
-      <div class="f-credits">
+  <!-- footer link -->
+  <footer class="footer section-footer">
+    <div class="container gird gird-four-column">
+      <div class="f-about">
+        <h3>About</h3>
         <p>
-          Copyright @2023 All rights reserved | This Portfolio is made by
-          Adithya Shetty
+          Adithya shetty - Mern Stack Developer. Now helping students via Scholars Go website.
         </p>
       </div>
-    </footer>
+      <!-- end  -->
+      <div class="f-links">
+        <h3>Navigations</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#">Home</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#About">About</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="./index.html#Projects">Projects</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="./service.html">Services</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#">More</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end -->
+      <div class="f-services">
+        <h3>Services</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">UI Design</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Development</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Hosting</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Maintaince</a>
+          </li>
 
-    
-    <!-- icons link -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+        </ul>
+      </div>
+      <!-- end -->
+      <div class="f-address">
+        <h3>Have a Question ?</h3>
+        <address>
+          <div>
+            <p>
+              <span><ion-icon name="location-outline"></ion-icon> </span>
+              Ujire, India
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><ion-icon name="call-outline"></ion-icon> </span>
+              <a href="tel:+918496952366">+91 8496952366</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><ion-icon name="mail-open-outline"></ion-icon> </span>
+              <a href="mailto:adishettygu102@gmail.com" wrap>Contact us</a>
+            </p>
+          </div>
+        </address>
+      </div>
+    </div>
 
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <div class="f-social-icons">
+      <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"><ion-icon name="logo-linkedin"
+          class="icons linkedin"></ion-icon></a>
+      <a href="https://github.com/ADITHYAADHI06" target="_blank"><ion-icon name="logo-github"
+          class="icons insta"></ion-icon></a>
+      <a href="https://wa.me/8496952366" target="_blank"><ion-icon name="logo-whatsapp"
+          class="icons whatsapp"></ion-icon></a>
+    </div>
 
-    <script src="./index.js"></script>
-  </body>
+    <div class="f-credits">
+      <p>
+        Copyright @2023 All rights reserved | This Portfolio is made by
+        Adithya Shetty
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>

@@ -1,659 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
-    <!-- Font for Heading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- FaviIcon -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+  <!-- Font for Heading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link
-      rel="shortcut icon"
-      href="./images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./images/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./images/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./images/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./images/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./images/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./images/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./images/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./images/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./images/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./images/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- SEO -->
-    <meta
-      name="description"
-      content="My portfolio website to showcase the work i have done so far, the services I provide and all my professionals life"
-    />
-    <meta
-      name="keywords"
-      content="portfolio website HTML CSS JAVASCRIPT portfolio"
-    />
-    <meta name="author" content="Adithya Shetty" />
+  <!-- FaviIcon -->
 
-    <title>Adithya shetty</title>
-    <!-- fonts used -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- SEO -->
+  <meta name="description"
+    content="My portfolio website to showcase the work i have done so far, the services I provide and all my professionals life" />
+  <meta name="keywords" content="portfolio website HTML CSS JAVASCRIPT portfolio" />
+  <meta name="author" content="Adithya Shetty" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <title>Adithya shetty</title>
+  <!-- fonts used -->
 
-    <!-- font Awosome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- css file-->
-    <link rel="stylesheet" href="./css/style.css" />
+  <!-- font Awosome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Javascript file  -->
-    <script defer src="./index.js"></script>
+  <!-- css file-->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!-- =======================================================================
+  <!-- Javascript file  -->
+  <script defer src="./index.js"></script>
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- =======================================================================
         Our Navbar Start
    ========================================================================= -->
 
-    <header class="header">
-    <img src="images/Logo_Portfolio-2.png" class="logo" alt="logo" /> 
+  <header class="header">
+    <img src="images/Logo_Portfolio-2.png" class="logo" alt="logo" />
 
-      <nav class="navbar">
-        <ul class="navbar-lists">
-          <li><a href="./index.html" class="navbar-link btnleft_to_right left_to_right  home-link">HOME</a></li>
-          <li>
-            <a href="./about.html" class="navbar-link btnleft_to_right left_to_right about-link">About</a>
-          </li>
-          <li>
-            <a href="./service.html" class="navbar-link btnleft_to_right left_to_right service-link"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="#Projects" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
-          </li>
-          <li>
-            <a href="./contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="navbar">
+      <ul class="navbar-lists">
+        <li><a href="./index.html" class="navbar-link btnleft_to_right left_to_right  home-link">HOME</a></li>
+        <li>
+          <a href="./about.html" class="navbar-link btnleft_to_right left_to_right about-link">About</a>
+        </li>
+        <li>
+          <a href="./service.html" class="navbar-link btnleft_to_right left_to_right service-link">Services</a>
+        </li>
+        <li>
+          <a href="#Projects" class="navbar-link btnleft_to_right left_to_right portfolio-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="navbar-link btnleft_to_right left_to_right contact-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="mobile-btn">
-        <i class="fa-solid fa-bars" name="open-icon"></i>
-        <i class="fa-solid fa-xmark" name="close-icon"></i>
-      </div>
-    </header>
+    <div class="mobile-btn">
+      <i class="fa-solid fa-bars" name="open-icon"></i>
+      <i class="fa-solid fa-xmark" name="close-icon"></i>
+    </div>
+  </header>
 
-    <!-- =======================================================================
+  <!-- =======================================================================
         Our Hero Section Start
    ========================================================================= -->
 
-    <main>
-      <div class="section section-hero">
-        <div class="container container_for_hero gird-two-column gird flex">
-          <div class="section-hero-data">
-            <span class="hero-top-data">this is me</span>
-            <h1 class="hero-heading">
-              Adithya <br />
-              Shetty
-            </h1>
-            <p class="hero-para">
-               I am Mern Stack Developer. 
-              I build interactive websites that run across platforms & devices.
-            </p>
-            <div>
-              
-            </div>
-            <div class="btns">
-              <a href="mailto:adithyashetty102@gmail.com" class="btn  hireme-btn getintouch">get in touch</a>
-              <a href="./images/CV/Adithya_resume.pdf" target="_blank" class="cv-transperent getintouch">Download CV</a>
-            </div>
-          </div>
+  <main>
+    <div class="section section-hero">
+      <div class="container container_for_hero gird-two-column gird flex">
+        <div class="section-hero-data">
+          <span class="hero-top-data">this is me</span>
+          <h1 class="hero-heading">
+            Adithya <br />
+            Shetty
+          </h1>
+          <p class="hero-para">
+            I am Mern Stack Developer.
+            I build interactive webapps that run across platforms & devices.
+          </p>
+          <div>
 
-          <div class="section-hero-image">
-            <img src="./images/hero1-removebg-preview.png" alt="hero image "  class="hero-image" />
-            <!-- style=" border-radius:49% 51% 58% 42% / 30% 30% 70% 70% " -->
+          </div>
+          <div class="btns">
+            <a href="mailto:adithyashetty102@gmail.com" class="btn  hireme-btn getintouch">get in touch</a>
+            <a href="./images/CV/Adithya-Shetty-Resume-8496952366.pdf" target="_blank"
+              class="cv-transperent getintouch">Download CV</a>
           </div>
         </div>
-      </div>
-    </main>
 
-    <!-- =======================================================================
+        <div class="section-hero-image">
+          <img src="./images/hero1-removebg-preview.png" alt="hero image " class="hero-image" />
+          <!-- style=" border-radius:49% 51% 58% 42% / 30% 30% 70% 70% " -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =======================================================================
         Our Bio-data Section Start
    ========================================================================= -->
 
-    <div class="section-bioData section" id="About">
-      <div class="container bioData gird-two-column gird flex" >
-        <div class="bio-image">
-          <img
-            src="./images/biodatalazy.jpg"
-            data-src="./images/biodata.jpg"
-            alt="bioimage"
-            class="Bio-logo"
-          />
-        </div>
-        <div class="bio-data">
-          <h2 class="common-heading">About Me..</h2>
-          <p class="about-para ">
-            I am extremely proficient in Front-End Development using HTML5, CSS3, Bootstrap-5, Javascript, React.Js And apart from Front-End, I have Basic knowledge in Back-End using Node.Js & MongoDB as well as, I have Good knowledge in Creating and Handling REST API using Node.Js, and continuously engage in trying to extend my skills with new technology.
-          </p>
+  <div class="section-bioData section" id="About">
+    <div class="container bioData gird-two-column gird flex">
+      <div class="bio-image">
+        <img src="./images/biodatalazy.jpg" alt="bioimage" class="Bio-logo" />
+      </div>
+      <div class="bio-data">
+        <h2 class="common-heading">About Me..</h2>
+        <p class="about-para ">
+          I am extremely proficient in Front-End Development using HTML5, CSS3, Bootstrap-5, TailWindCSS, Javascript,
+          React.Js, Redux, Jest, React Testing, and I Also have pretty good knowledge in Back-End Development using
+          Node.Js, Express.Js & MongoDB as well as, I have Good
+          knowledge in Creating and Handling REST API using Node.Js, and continuously engage in trying to extend my
+          skills with new technology.
+        </p>
 
-          <div class="bio-data-stats">
-           
-            <div class="bio-stats">
-              <h3 class="common-heading">Front-End Skills</h3>
-              <div class="skills">
-              <span class="bio-skill-pill">HTML</span>
-              <span class="bio-skill-pill">CSS</span>
-              <span class="bio-skill-pill">Bootstrap 5</span>
+        <div class="bio-data-stats">
+
+          <div class="bio-stats">
+            <h3 class="common-heading">Front-End Skills</h3>
+            <div class="skills">
+              <span class="bio-skill-pill extra-highlight">HTML</span>
+              <span class="bio-skill-pill extra-highlight">CSS</span>
+              <span class="bio-skill-pill extra-highlight">Bootstrap 5</span>
+              <span class="bio-skill-pill  extra-highlight">TailWind</span>
+              <span class="bio-skill-pill  extra-highlight">JavaScript</span>
+              <span class="bio-skill-pill  extra-highlight">React Js</span>
+              <span class="bio-skill-pill  extra-highlight">Redux</span>
+              <span class="bio-skill-pill extra-highlight">Jest</span>
+              <span class="bio-skill-pill extra-highlight">Next Js 13</span>
             </div>
-              <div class="skills">
-              <span class="bio-skill-pill">JavaScript</span>
-              <span class="bio-skill-pill">React Js</span>
-              <span class="bio-skill-pill">API</span>
-            </div>
+            <!-- <div class="skills">
+             
+            </div> -->
           </div>
 
-            <div class="bio-stats">
+          <div class="bio-stats">
             <h3 class="common-heading">Back-End Skills</h3>
             <div class="skills">
-            <span class="bio-skill-pill">Node Js</span>
-            <span class="bio-skill-pill">Express Js</span>
-            <span class="bio-skill-pill">Mango DB</span>
-          </div>
-          <div class="skills">
-            <span class="bio-skill-pill">Mern Stack Basics</span>
-          </div>
-            </div>
+              <span class="bio-skill-pill  extra-highlight ">Node Js</span>
+              <span class="bio-skill-pill  extra-highlight">Express Js</span>
+              <span class="bio-skill-pill  extra-highlight">Mongo DB</span>
+              <span class="bio-skill-pill extra-highlight">Git & GitHub </span>
+              <span class="bio-skill-pill extra-highlight">Mern Stack</span>
+              <span class="bio-skill-pill extra-highlight">Postman</span>
+              <span class="bio-skill-pill extra-highlight">RestFUL Api</span>
 
-            <!-- <div class="btn-data-cv hireme-btn">
+            </div>
+            <!-- <div class="skills">
+
+            
+            </div> -->
+          </div>
+
+          <!-- <div class="btn-data-cv hireme-btn">
               <a href="./images/Adithya Resume.pdf">Download CV</a>
             </div> -->
-            </div>
-            </div>
-          </div>
         </div>
-    
+      </div>
+    </div>
+  </div>
 
-    <!-- =======================================================================
+
+  <!-- =======================================================================
         Our portfolio Section Start
    ========================================================================= -->
 
-    <section class="section section-portfolio" id="Projects">
-      <div class="container">
-        <h2 class="common-heading">Latest Works..</h2>
-        <p>
-          Building a great website is more than just knowing how to make things look pretty or writing clever code. I listen to your needs, ensuring you get a product you’re happy with.
-        </p>
-      </div>
+  <section class="section section-portfolio" id="Projects">
+    <div class="container">
+      <h2 class="common-heading">Latest Works..</h2>
+      <p>
+        Building a great website is more than just knowing how to make things look pretty or writing clever code. I
+        listen to your needs, ensuring you get a product you’re happy with.
+      </p>
+    </div>
 
-      <div class="p-btns portfolio">
-        <div class="btn p-btn" data-btn-num="1">Websites</div>
-        <div class="btn p-btn" data-btn-num="2">Portfolio</div>
-      </div>
+    <div class="p-btns portfolio">
+      <div class="btn p-btn" data-btn-num="1">Web Apps</div>
+      <div class="btn p-btn" data-btn-num="2">Web Sites</div>
+    </div>
 
-      <div class="container gird gird-three-column portfolio-images">
-        <div class="img-overlay p-btn--1">
-          <figure>
-            <img src="./images/folio/Go.png" alt="works1" />
-          </figure>
-          <div class="overlay">
-            <a href="https://scholarsweb.herokuapp.com/"  target="_Adithya" class="common-heading">Scholars Go</a>
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--2">
-          <img src="./images/folio/dev.png" alt="works2" />
-          <div class="overlay">
-            <a href="https://adithyaadhi06.github.io/dev-adithya/"  target="_Adithya" class="common-heading">Developer Portfolio</a>
-          </div>
-        </div>
-
-        <div class="img-overlay p-btn--1">
-          <img src="./images/folio/netflix.png" alt="works1" />
-          <div class="overlay">
-            <a href="https://trailerflix-app-290f5.web.app/" target="_Adithya" class="common-heading">TIDEO APP</a>
-          </div>
-        </div>
-
-       
-        <div class="img-overlay p-btn--1">
-          <img src="./images/folio/microsoft.png" alt="works1" />
-          <div class="overlay">
-            <a href="https://adithyaadhi06.github.io/Microsoft-Homepage_ux/" target="_Adithya" class="common-heading">Microsoft landing page</a>
-          </div>
-        </div>
-
-     
-
-        <div class="img-overlay p-btn--1">
-          <img src="./images/folio/apple.png" alt="works1" />
-          <div class="overlay">
-            <a href="https://adithyaadhi06.github.io/Apple-Homepage_ux/" target="_Adithya" class="common-heading">Apple landing page</a>
-          </div>
-        </div>
-        <div class="img-overlay p-btn--2">
-          <img src="./images/folio/dev-2.png" alt="works2" />
-          <div class="overlay">
-            <a href="#" target="_Adithya" class="common-heading">Developer Portfolio</a>
-          </div>
+    <div class="container gird gird-three-column portfolio-images">
+      <div class="img-overlay p-btn--1">
+        <img src="./images/folio/nt-1.jpg" alt="works1" />
+        <div class="overlay">
+          <a href="https://netflix-gpt-show.netlify.app/" target="_Adithya" class="common-heading">NETFLIX-GPT APP</a>
         </div>
       </div>
-    </section>
+      <div class="img-overlay p-btn--1">
+        <figure>
+          <img src="./images/folio/E-mart-img-1.png" alt="works1" />
+        </figure>
+        <div class="overlay">
+          <a href="https://e-mart-shop.netlify.app/" target="_Adithya" class="common-heading">E-Commerce App</a>
+        </div>
+      </div>
 
-    <!-- =======================================================================
+      <div class="img-overlay p-btn--1">
+        <figure>
+          <img src="./images/folio/yt-1.jpg" alt="works1" />
+        </figure>
+        <div class="overlay">
+          <a href="#Projects" target="_Adithya" class="common-heading">Youtube App</a>
+        </div>
+      </div>
+      <div class="img-overlay p-btn--1">
+        <figure>
+          <img src="./images/folio/Go.png" alt="works1" />
+        </figure>
+        <div class="overlay">
+          <a href="#Projects" target="_Adithya" class="common-heading">Scholars Go</a>
+        </div>
+      </div>
+
+      <!-- <div class="img-overlay p-btn--2">
+        <img src="./images/folio/dev.png" alt="works2" />
+        <div class="overlay">
+          <a href="https://adithyaadhi06.github.io/dev-adithya/" target="_Adithya" class="common-heading">Developer
+            Portfolio</a>
+        </div>
+      </div> -->
+
+
+
+
+      <div class="img-overlay p-btn--2">
+        <img src="./images/folio/microsoft.png" alt="works1" />
+        <div class="overlay">
+          <a href="https://adithyaadhi06.github.io/Microsoft-Homepage_ux/" target="_Adithya"
+            class="common-heading">Microsoft landing page</a>
+        </div>
+      </div>
+
+
+
+      <div class="img-overlay p-btn--2">
+        <img src="./images/folio/apple.png" alt="works1" />
+        <div class="overlay">
+          <a href="https://adithyaadhi06.github.io/Apple-Homepage_ux/" target="_Adithya" class="common-heading">Apple
+            landing page</a>
+        </div>
+      </div>
+      <!-- <div class="img-overlay p-btn--2">
+        <img src="./images/folio/dev-2.png" alt="works2" />
+        <div class="overlay">
+          <a href="#" target="_Adithya" class="common-heading">Developer Portfolio</a>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- =======================================================================
         Our portfolio Section Start
    ========================================================================= -->
 
-    <section class="section section-services" id="Services">
-      <div class="container" >
-        <h2 class="common-heading services">Services Offer</h2>
+  <section class="section section-services" id="Services">
+    <div class="container">
+      <h2 class="common-heading services">Services Offer</h2>
+      <p>
+        We provide everything you need for your perfect website. From the Ui Design to till hosting and maintaince of
+        your website.
+      </p>
+    </div>
+
+    <!-- service offers card -->
+    <div class="container gird gird-three-column service">
+      <div class="service-box">
+        <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+        <h3>User Experience Design</h3>
         <p>
-          We provide everything you need for your perfect website. From the Ui Design to till hosting and maintaince of your website. 
+          I design your website to be as easy to use, I take the user’s experience first while guiding users towards the
+          end goal.
         </p>
       </div>
 
-      <!-- service offers card -->
-      <div class="container gird gird-three-column service">
-        <div class="service-box">
-          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
-          <h3>User Experience Design</h3>
-          <p>
-            I design your website to be as easy to use, I take the user’s experience first while guiding users towards the end goal.
-          </p>
-        </div>
-
-        <div class="service-box">
-          <ion-icon name="code-slash-sharp" class="service-icon"></ion-icon>
-          <h3>Full Stack Development</h3>
-          <p>
-            I focus on making websites easy to interact with so users can easily reach their end goal.
-          </p>
-        </div>
-        <div class="service-box">
-          <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
-          <h3>Hosting & Maintaince</h3>
-          <p>
-            Your website is always growing. Whether you’re adding new features or making improvements we will take care of that.
-          </p>
-        </div>
+      <div class="service-box">
+        <ion-icon name="code-slash-sharp" class="service-icon"></ion-icon>
+        <h3>Full Stack Development</h3>
+        <p>
+          I focus on making websites easy to interact with so users can easily reach their end goal.
+        </p>
       </div>
-    </section>
+      <div class="service-box">
+        <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
+        <h3>Hosting & Maintaince</h3>
+        <p>
+          Your website is always growing. Whether you’re adding new features or making improvements we will take care of
+          that.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- =======================================================================
+  <!-- =======================================================================
         Swiper Section Start
      ========================================================================= -->
-    <section class="section section-testimonials testimonials">
-      <div class="container">
-        <h2 class="common-heading">Endorsements</h2>
+  <section class="section section-testimonials testimonials">
+    <div class="container">
+      <h2 class="common-heading">Endorsements</h2>
 
-        <div class="swiper mySwiper container">
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <div class="swiper-client-msg">
-                <p>
-                  I love to work with Adithya shetty and appreciate all his contributions to Scholars Go Project- A web application for of all latest off/on campus placement papers.
-                </p>
-              </div>
-              <div class="swiper-client-data grid gird-two-column">
-                <figure>
-                  <img src="./images/clients/avinash.JPG" alt="" />
-                </figure>
-                <div class="client-data-details">
-                  <p class="name">Avinash Shenoy</p>
-                  <p class="desciption">SDE at GlobalLogic</p>
-                </div>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                I love to work with Adithya shetty and appreciate all his contributions to Scholars Go Project- A web
+                application for of all latest off/on campus placement papers.
+              </p>
+            </div>
+            <div class="swiper-client-data grid gird-two-column">
+              <figure>
+                <img src="./images/clients/avinash.JPG" alt="" />
+              </figure>
+              <div class="client-data-details">
+                <p class="name">Avinash Shenoy</p>
+                <p class="desciption">SDE at GlobalLogic</p>
               </div>
             </div>
-            
-            <div class="swiper-slide">
-              <div class="swiper-client-msg">
-                <p>
-             He is professional and enthusiastic and always willing to provide suggestions for improving accessibility and functionality of a site or projects.
-                </p>
-              </div>
-              <div class="swiper-client-data grid gird-two-column">
-                <figure>
-                  <img src="./images/clients/nithin.jpeg" alt="" />
-                </figure>
-                <div class="client-data-details">
-                  <p class="name">Nithin K</p>
-                  <p class="desciption">SDE at sonata software</p>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
 
-    <!-- =======================================================================
+          <div class="swiper-slide">
+            <div class="swiper-client-msg">
+              <p>
+                He is professional and enthusiastic and always willing to provide suggestions for improving
+                accessibility and functionality of a Web Applications.
+              </p>
+            </div>
+            <div class="swiper-client-data grid gird-two-column">
+              <figure>
+                <img src="./images/clients/nithin.jpeg" alt="" />
+              </figure>
+              <div class="client-data-details">
+                <p class="name">Nithin K</p>
+                <p class="desciption">SDE at sonata software</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================================
         Our freelancing Section Start
    ========================================================================= -->
 
-    <section class="section section-freelancing">
-      <div class="overlay"></div>
-      <div class="container">
-        <h2>I am <span>avalibale</span> free freelancing</h2>
+  <section class="section section-freelancing">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2>I am <span>avalibale</span> free freelancing</h2>
+      <p>
+        Life is too short for poor user experience and bad beer. I never compromise on these two.
+      </p>
+      <div class="btn-data-cv hireme-btn">
+        <a hhref="mailto:adithyashetty102@gmail.com">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact">
+    <div class="container contact">
+      <h2 class="common-heading ">Contact Us</h2>
+    </div>
+    <section class="section-contact-main contact-container">
+      <form action="https://formspree.io/f/mgednpgr" method="POST">
+        <div class="gird gird-two-column">
+          <div>
+            <label for="username"></label>
+            <input type="text" name="username" placeholder="Enter your name" id="username" required
+              autocomplete="off" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="Enter your email" id="email" required autocomplete="off" />
+          </div>
+        </div>
+        <div>
+          <label for="subject"></label>
+          <input type="text" name="subject" placeholder="subject" id="" required autocomplete="off" />
+        </div>
+        <div>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" required autocomplete="off" min="6"></textarea>
+        </div>
+        <div>
+          <input type="submit" name="submit" id="submit" class="btn-data-cv" value="Send message" />
+        </div>
+      </form>
+    </section>
+  </section>
+
+  <!-- footer link -->
+  <footer class="footer section-footer">
+    <div class="container gird gird-four-column">
+      <div class="f-about">
+        <h3>About</h3>
         <p>
-          Life is too short for poor user experience and bad beer. I never compromise on these two.
+          Adithya shetty - Mern Stack Developer | React Js Developer | Node Js Developer
         </p>
-        <div class="btn-data-cv hireme-btn">
-          <a hhref="mailto:adithyashetty102@gmail.com">Hire Me</a>
-        </div>    
       </div>
-    </section>
-
-    <section class="section section-contact">
-      <div class="container contact">
-        <h2 class="common-heading " >Contact Us</h2>
+      <!-- end  -->
+      <div class="f-links">
+        <h3>Navigations</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#">Home</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#About">About</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="#Projects">Projects</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="./service.html">Services</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a href="#">More</a>
+          </li>
+        </ul>
       </div>
-      <section class="section-contact-main contact-container">
-        <form action="https://formspree.io/f/mgednpgr" method="POST">
-          <div class="gird gird-two-column">
-            <div>
-              <label for="username"></label>
-              <input
-                type="text"
-                name="username"
-                placeholder="Enter your name"
-                id="username"
-                required
-                autocomplete="off"
-              />
-            </div>
-            <div>
-              <label for="email"></label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                id="email"
-                required
-                autocomplete="off"
-              />
-            </div>
-          </div>
-          <div>
-            <label for="subject"></label>
-            <input
-              type="text"
-              name="subject"
-              placeholder="subject"
-              id=""
-              required
-              autocomplete="off"
-            />
-          </div>
-          <div>
-            <label for="textarea"></label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              cols="30"
-              rows="10"
-              required
-              autocomplete="off"
-              min="6"
-            ></textarea>
-          </div>
-          <div>
-            <input
-              type="submit"
-              name="submit"
-              id="submit"
-              class="btn-data-cv"
-              value="Send message"
-            />
-          </div>
-        </form>
-      </section>
-    </section>
+      <!-- end -->
+      <div class="f-services">
+        <h3>Services</h3>
+        <ul>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">UI Design</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Development</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Hosting</a>
+          </li>
+          <li>
+            <span>
+              <ion-icon name="arrow-forward-outline" class="footer-icon"></ion-icon></span><a
+              href="https://wa.me/8496952366">Maintaince</a>
+          </li>
 
-    <!-- footer link -->
-    <footer class="footer section-footer">
-      <div class="container gird gird-four-column">
-        <div class="f-about">
-          <h3>About</h3>
-          <p>
-            Adithya shetty - Mern Stack Developer. Now helping students via Scholars Go website.
-          </p>
-        </div>
-        <!-- end  -->
-        <div class="f-links">
-          <h3>Navigations</h3>
-          <ul>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#">Home</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#About">About</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#Projects">Projects</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="./service.html">Services</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="#">More</a>
-            </li>
-          </ul>
-        </div>
-        <!-- end -->
-        <div class="f-services">
-          <h3>Services</h3>
-          <ul>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">UI Design</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Development</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Hosting</a>
-            </li>
-            <li>
-              <span>
-                <ion-icon
-                  name="arrow-forward-outline"
-                  class="footer-icon"
-                ></ion-icon></span
-              ><a href="https://wa.me/8496952366">Maintaince</a>
-            </li>
-         
-          </ul>
-        </div>
-        <!-- end -->
-        <div class="f-address">
-          <h3>Have a Question ?</h3>
-          <address>
-            <div>
-              <p>
-                <span><ion-icon name="location-outline"></ion-icon> </span>
+        </ul>
+      </div>
+      <!-- end -->
+      <div class="f-address">
+        <h3>Have a Question ?</h3>
+        <address>
+          <div>
+            <p>
+              <span><ion-icon name="location-outline"></ion-icon> </span>
               Ujire, India
-              </p>
-            </div>
-            <div>
-              <p>
-                <span><ion-icon name="call-outline"></ion-icon> </span>
-                <a href="tel:+918496952366">+91 8496952366</a>
-              </p>
-            </div>
-            <div>
-              <p>
-                <span><ion-icon name="mail-open-outline"></ion-icon> </span>
-                <a href="mailto:adishettygu102@gmail.com" wrap>Contact us</a>
-              </p>
-            </div>
-          </address>
-        </div>
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><ion-icon name="call-outline"></ion-icon> </span>
+              <a href="tel:+918496952366">+91 8496952366</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              <span><ion-icon name="mail-open-outline"></ion-icon> </span>
+              <a href="mailto:adishettygu102@gmail.com" wrap>Contact us</a>
+            </p>
+          </div>
+        </address>
       </div>
+    </div>
 
-      <div class="f-social-icons">
-        <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"
-        ><ion-icon name="logo-linkedin" class="icons linkedin"></ion-icon
-      ></a>
-        <a href="https://github.com/ADITHYAADHI06" target="_blank"
-          ><ion-icon name="logo-github" class="icons insta"></ion-icon
-        ></a>
-        <a href="https://wa.me/8496952366" target="_blank"
-          ><ion-icon name="logo-whatsapp" class="icons whatsapp"></ion-icon
-        ></a>
-      </div>
+    <div class="f-social-icons">
+      <a href="https://www.linkedin.com/in/adithya-shetty-udupi/" target="_blank"><ion-icon name="logo-linkedin"
+          class="icons linkedin"></ion-icon></a>
+      <a href="https://github.com/ADITHYAADHI06" target="_blank"><ion-icon name="logo-github"
+          class="icons insta"></ion-icon></a>
+      <a href="https://wa.me/8496952366" target="_blank"><ion-icon name="logo-whatsapp"
+          class="icons whatsapp"></ion-icon></a>
+    </div>
 
-      <div class="f-credits">
-        <p>
-          Copyright @2023 All rights reserved | This Portfolio is made by
-          Adithya Shetty
-        </p>
-      </div>
-    </footer>
+    <div class="f-credits">
+      <p>
+        Copyright @2023 All rights reserved | This Portfolio is made by
+        Adithya Shetty
+      </p>
+    </div>
+  </footer>
 
-    <!--=======================
+  <!--=======================
        Scroll to TOP Button
      ========================== -->
 
-    <!-- swiper js link -->
+  <!-- swiper js link -->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- icons link -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
